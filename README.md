@@ -1,6 +1,6 @@
-# IT Asset Tracking Portal (ITAMS)
+# IT Asset Tracking Portal 
 
-A full-stack **IT Asset Management and Tracking System** built with **Spring Boot, Thymeleaf, PostgreSQL, and Spring Security**. ITAMS centralizes IT asset tracking, assignments, ticketing, maintenance, and employee feedback to improve efficiency, accountability, and IT operations.
+A full-stack **IT Asset Management and Tracking System** built with **Spring Boot,PostgreSQL, Thymeleaf, and Spring Security**. ITAMS centralizes IT asset tracking, assignments, ticketing, maintenance, and employee feedback to improve efficiency, accountability, and IT operations.
 
 ---
 
@@ -38,7 +38,6 @@ A full-stack **IT Asset Management and Tracking System** built with **Spring Boo
 
 ### Database
 
-* [Database Structure](https://github.com/NithushanUthayarasa/it-asset-tracking-portal-v2/blob/main/screenshots/Db.png)
 * [PostgreSQL Screenshot](https://github.com/NithushanUthayarasa/it-asset-tracking-portal-v2/blob/main/screenshots/PostgreSQL.png)
 
 ---
@@ -221,4 +220,4 @@ This project is developed for **educational and learning purposes only** and is 
 
 ---
 
-**Author:** Nithushan Uthayarasa
+**Author:** NithushanUthayarasa
