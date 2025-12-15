@@ -24,12 +24,13 @@
 
 ### 👨‍💻 Employee
 
-* [Employee Dashboard](https://github.com/NithushanUthayarasa/IT-Company-Asset-Portal/blob/main/screenshots/Employee_Dashboard.png)
+* [Employee Dashboard](https://github.com/NithushanUthayarasa/IT-Company-Asset-Portal/blob/main/screenshots/EmployeeDashboard.png)
 * [Assigned Assets](https://github.com/NithushanUthayarasa/IT-Company-Asset-Portal/blob/main/screenshots/Employee_Asset.png)
 * [Create Ticket](https://github.com/NithushanUthayarasa/IT-Company-Asset-Portal/blob/main/screenshots/Employee_CreateTicket.png)
 * [My Tickets](https://github.com/NithushanUthayarasa/IT-Company-Asset-Portal/blob/main/screenshots/Employee_Myticket.png)
 * [Feedback](https://github.com/NithushanUthayarasa/IT-Company-Asset-Portal/blob/main/screenshots/Employee_Feedback.png)
 * [Assignments](https://github.com/NithushanUthayarasa/IT-Company-Asset-Portal/blob/main/screenshots/Employee_Assignments.png)
+* [Profile](https://github.com/NithushanUthayarasa/IT-Company-Asset-Portal/blob/main/screenshots/EmployeeProfileEditandView.png)
 
 ### 🔐 Authentication
 
@@ -38,7 +39,7 @@
 
 ### 🗄️ Database
 
-* [PostgreSQL Screenshot](https://github.com/NithushanUthayarasa/IT-Company-Asset-Portal/blob/main/screenshots/PostgreSQL.png)
+* [PostgreSQL Screenshot](https://github.com/NithushanUthayarasa/IT-Company-Asset-Portal/blob/main/screenshots/PostgreSQL_Db.png)
 
 ---
 
@@ -174,6 +175,8 @@ spring.main.allow-bean-definition-overriding=true
 * CSRF protection enabled
 * Custom `UserDetailsServiceImpl`
 * Pending user approval before login
+* [PasswordHashing (BCrypt)](https://github.com/NithushanUthayarasa/IT-Company-Asset-Portal/blob/main/screenshots/Security.png)
+
 
 ---
 
