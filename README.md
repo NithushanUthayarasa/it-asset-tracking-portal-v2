@@ -1,6 +1,6 @@
-# IT Asset Tracking Portal
+# IT Company Asset Portal
 
-**I built a full-stack IT Asset Tracking Portal from scratch using Spring Boot, PostgreSQL, Thymeleaf, and Spring Security. This system centralizes IT asset tracking, assignments, ticketing, maintenance, and employee feedback to enhance efficiency, accountability, and IT operations.**
+**I built a full-stack IT Company Asset Portal from scratch using Spring Boot, PostgreSQL, Thymeleaf, and Spring Security. This system centralizes IT asset tracking, assignments, ticketing, maintenance, and employee feedback to enhance efficiency, accountability, and IT operations.**
 
 ---
 
