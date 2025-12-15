@@ -39,7 +39,7 @@
 
 ### 🗄️ Database
 
-* [PostgreSQL Screenshot](https://github.com/NithushanUthayarasa/IT-Company-Asset-Portal/blob/main/screenshots/PostgreSQL_Db.png)
+* [PostgreSQL](https://github.com/NithushanUthayarasa/IT-Company-Asset-Portal/blob/main/screenshots/PostgreSQL_Db.png)
 
 ---
 
@@ -226,7 +226,7 @@ mvn spring-boot:run
 
 ## 📄 License
 
-This project is for **educational and learning purposes only.**.
+This project is for **educational and learning purposes only**.
 
 ---
 
