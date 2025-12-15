@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome 6.6.0 -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
 
     <style>
         :root {
@@ -24,19 +24,32 @@
             background-color: #f8f9fa;
         }
 
+        /* --- NAVBAR --- */
         .navbar {
+            /* REVERTED TO OLD COLOR (Blue) */
             background-color: var(--primary) !important;
             height: 70px;
             box-shadow: 0 4px 20px rgba(13,110,253,0.3);
+            z-index: 1030;
         }
-        .navbar-brand, .navbar-text, .nav-link, .btn-outline-light {
+
+        /* SPECIFIC RULE: Asset Portal Text is BLACK */
+        .navbar-brand {
+            color: black !important;
+            font-weight: 700; /* Made slightly bolder for better visibility on blue */
+        }
+
+        /* OTHER NAV ITEMS REMAIN WHITE */
+        .navbar-text, .nav-link, .btn-outline-light {
             color: white !important;
             font-weight: 600;
         }
+
         .btn-outline-light:hover {
             background-color: rgba(255,255,255,0.2);
         }
 
+        /* --- WHITE SIDEBAR --- */
         .sidebar {
             background-color: white;
             border-right: 1px solid #e9ecef;
@@ -44,52 +57,75 @@
             position: sticky;
             top: 70px;
             box-shadow: 3px 0 15px rgba(0,0,0,0.04);
+            padding-top: 1.5rem !important;
         }
 
+        /* Sidebar List Items */
         .list-group-item {
             border: none;
             padding: 14px 24px;
             margin: 4px 12px;
             border-radius: 12px;
-            color: #6c757d;
-            font-weight: 600;
+            color: #495057;
+            font-weight: 700;
             transition: all 0.3s ease;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
             display: flex;
             align-items: center;
+            justify-content: flex-start;
+            text-align: left;
         }
 
+        .list-group-item i {
+            min-width: 28px;
+            color: #6c757d;
+        }
+
+        /* Hover Effect */
         .list-group-item:hover {
             background-color: var(--light-blue);
             color: var(--primary);
-            transform: translateX(8px);
+            transform: translateX(5px);
+        }
+        .list-group-item:hover i {
+            color: var(--primary);
         }
 
+        /* Active State */
         .list-group-item.active {
             background: linear-gradient(135deg, var(--primary), var(--primary-dark));
             color: white !important;
             box-shadow: 0 6px 20px rgba(13,110,253,0.3);
-            font-weight: 700;
+            font-weight: 800;
         }
 
-        .list-group-item.active i { color: white !important; }
-        .list-group-item i { min-width: 24px; }
+        .list-group-item.active i {
+            color: white !important;
+        }
 
+        /* --- GENERAL STATS & CARDS --- */
         .stat-card { transition: all 0.3s ease; }
         .stat-card:hover { transform: translateY(-8px); box-shadow: 0 10px 25px rgba(0,0,0,0.15) !important; }
     </style>
 </head>
 <body>
 
-<!-- DEEP BLUE NAVBAR -->
-<nav class="navbar navbar-expand-lg sticky-top shadow-lg">
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg sticky-top">
     <div class="container-fluid px-4">
-        <a class="navbar-brand fw-bold fs-4" href="/employee/dashboard">
-            <i class="fas fa-server me-2"></i>ITAMS
+        <!-- Asset Portal Link (Will be BLACK due to CSS above) -->
+        <a class="navbar-brand fs-4" href="/employee/dashboard">
+            <i class="fas fa-server me-2"></i>Employee Workspace
         </a>
-        <div class="d-flex align-items-center gap-4">
+
+        <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target=".sidebar">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="d-flex align-items-center gap-4 ms-auto">
+            <!-- User Name (Remains WHITE) -->
             <span class="navbar-text d-none d-md-block">
                 <i class="fas fa-user-circle me-2"></i>
                 <span th:text="${fullName}">John Doe</span>
@@ -102,9 +138,9 @@
 <div class="container-fluid">
     <div class="row">
 
-        <!-- MODERN SIDEBAR -->
+        <!-- SIDEBAR -->
         <nav class="col-md-3 col-lg-2 d-md-block sidebar collapse">
-            <div class="position-sticky pt-4 px-3">
+            <div class="position-sticky pt-3">
                 <ul class="list-group list-group-flush">
                     <a href="/employee/dashboard" class="list-group-item active">
                         <i class="fas fa-tachometer-alt me-3"></i>Dashboard
@@ -140,7 +176,8 @@
 
             <!-- STATS CARDS -->
             <div class="row g-4 mb-5">
-                <div class="col-xl-3 col-md-6">
+                <!-- Open Tickets -->
+                <div class="col-md-6">
                     <div class="card stat-card text-white bg-primary shadow-sm h-100 text-center">
                         <div class="card-body p-4">
                             <i class="fas fa-ticket fa-3x mb-3 opacity-75"></i>
@@ -149,30 +186,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-md-6">
+                <!-- Assigned Assets -->
+                <div class="col-md-6">
                     <div class="card stat-card text-white bg-success shadow-sm h-100 text-center">
                         <div class="card-body p-4">
                             <i class="fas fa-laptop fa-3x mb-3 opacity-75"></i>
                             <h2 class="display-5 fw-bold" th:text="${assignedAssets != null ? assignedAssets : 0}">0</h2>
                             <p class="mb-0 fw-semibold">Assigned Assets</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="card stat-card text-white bg-info shadow-sm h-100 text-center">
-                        <div class="card-body p-4">
-                            <i class="fas fa-check-circle fa-3x mb-3 opacity-75"></i>
-                            <h2 class="display-5 fw-bold" th:text="${completedAssignments != null ? completedAssignments : 0}">0</h2>
-                            <p class="mb-0 fw-semibold">Completed Tasks</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="card stat-card text-white bg-warning shadow-sm h-100 text-center">
-                        <div class="card-body p-4">
-                            <i class="fas fa-clock fa-3x mb-3 opacity-75"></i>
-                            <h2 class="display-5 fw-bold" th:text="${pendingRequests != null ? pendingRequests : 0}">0</h2>
-                            <p class="mb-0 fw-semibold">Pending Requests</p>
                         </div>
                     </div>
                 </div>
@@ -227,14 +247,15 @@
                         <div class="card-body">
                             <div th:if="${feedbacks != null and !#lists.isEmpty(feedbacks)}">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item d-flex justify-content-between align-items-center py-3"
+                                    <li class="list-group-item d-flex justify-content-between align-items-center py-3 border-bottom"
+                                        style="font-weight: 500 !important;"
                                         th:each="fb : ${feedbacks}">
                                         <div>
                                             <strong class="text-warning" th:text="${fb.rating} + '/5'">5/5</strong>
-                                            <span class="ms-2" th:text="${fb.message}">Great service!</span>
+                                            <span class="ms-2 text-dark" th:text="${fb.message}">Great service!</span>
                                         </div>
                                         <small class="text-muted"
-                                               th:text="${#temporals.format(fb.submittedAt, 'dd MMM078 yyyy HH:mm')}">
+                                               th:text="${#temporals.format(fb.submittedAt, 'dd MMM yyyy HH:mm')}">
                                             04 Dec 2025 01:36
                                         </small>
                                     </li>
@@ -254,7 +275,7 @@
     </div>
 </div>
 
-<!-- FULLY RESTORED PROFILE MODAL WITH EDIT FUNCTIONALITY -->
+<!-- PROFILE MODAL -->
 <div class="modal fade" id="profileModal" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
