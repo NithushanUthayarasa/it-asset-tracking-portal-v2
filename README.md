@@ -21,6 +21,8 @@
 * [Add Asset](https://github.com/NithushanUthayarasa/IT-Company-Asset-Portal/blob/main/screenshots/Admin_Addasset.png)
 * [Add Assignment](https://github.com/NithushanUthayarasa/IT-Company-Asset-Portal/blob/main/screenshots/Admin_Addassignment.png)
 * [Pending Users](https://github.com/NithushanUthayarasa/IT-Company-Asset-Portal/blob/main/screenshots/Admin_PendingUsers.png)
+* [Debug Users](https://github.com/NithushanUthayarasa/IT-Company-Asset-Portal/blob/main/screenshots/Admin_debuguser.png)
+
 
 ### 👨‍💻 Employee
 
@@ -177,8 +179,6 @@ spring.main.allow-bean-definition-overriding=true
 * Custom `UserDetailsServiceImpl`
 * Pending user approval before login
 * [User Approval Management](https://github.com/NithushanUthayarasa/IT-Company-Asset-Portal/blob/main/screenshots/Admin_PendingUsers.png)
-* [PasswordHashing (BCrypt)](https://github.com/NithushanUthayarasa/IT-Company-Asset-Portal/blob/main/screenshots/Security.png)
-
 
 ---
 
