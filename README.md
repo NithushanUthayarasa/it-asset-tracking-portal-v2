@@ -135,6 +135,7 @@ IT Asset Tracking Portal (ITAMS)
 │   │   │   │   └── index.html, login.html, register.html
 │   │   │   └── application.properties
 ```
+* [Project Structure](https://github.com/NithushanUthayarasa/IT-Company-Asset-Portal/blob/main/screenshots/Project_Structure.png)
 
 ---
 
@@ -175,6 +176,7 @@ spring.main.allow-bean-definition-overriding=true
 * CSRF protection enabled
 * Custom `UserDetailsServiceImpl`
 * Pending user approval before login
+* [User Approval Management](https://github.com/NithushanUthayarasa/IT-Company-Asset-Portal/blob/main/screenshots/Admin_PendingUsers.png)
 * [PasswordHashing (BCrypt)](https://github.com/NithushanUthayarasa/IT-Company-Asset-Portal/blob/main/screenshots/Security.png)
 
 
