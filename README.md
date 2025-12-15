@@ -1,72 +1,69 @@
-# **IT Company Asset Portal**
+# IT Asset Tracking Portal
 
-**I built the complete full-stack IT Company Asset Portal from scratch using Spring Boot, PostgreSQL, Thymeleaf, and Spring Security. The system centralizes IT asset tracking, assignments, ticketing, maintenance, and employee feedback, enhancing efficiency, accountability, and IT operations.**
-
-
+**I built a full-stack IT Asset Tracking Portal from scratch using Spring Boot, PostgreSQL, Thymeleaf, and Spring Security. This system centralizes IT asset tracking, assignments, ticketing, maintenance, and employee feedback to enhance efficiency, accountability, and IT operations.**
 
 ---
 
 ## 📸 Screenshots
 
-### Homepage
+### 🏠 Homepage
 
 ![Homepage](https://github.com/NithushanUthayarasa/it-asset-tracking-portal-v2/blob/main/screenshots/homepage.png)
 
-### Admin
+### 👨‍💼 Admin
 
-* [Admin Dashboard](https://github.com/NithushanUthayarasa/it-asset-tracking-portal-v2/blob/main/screenshots/Admin_dashboard.png)
-* [Asset Management](https://github.com/NithushanUthayarasa/it-asset-tracking-portal-v2/blob/main/screenshots/Admin_Asset.png)
-* [Assignment Management](https://github.com/NithushanUthayarasa/it-asset-tracking-portal-v2/blob/main/screenshots/Admin_Assignment.png)
-* [Employee Management](https://github.com/NithushanUthayarasa/it-asset-tracking-portal-v2/blob/main/screenshots/Admin_Employees.png)
-* [Maintenance Management](https://github.com/NithushanUthayarasa/it-asset-tracking-portal-v2/blob/main/screenshots/Admin_Maintenance.png)
-* [Ticket Management](https://github.com/NithushanUthayarasa/it-asset-tracking-portal-v2/blob/main/screenshots/Admin_ticket.png)
-* [Add Asset](https://github.com/NithushanUthayarasa/it-asset-tracking-portal-v2/blob/main/screenshots/Admin_Addasset.png)
-* [Add Assignment](https://github.com/NithushanUthayarasa/it-asset-tracking-portal-v2/blob/main/screenshots/Admin_Addassignment.png)
-* [Pending Users](https://github.com/NithushanUthayarasa/it-asset-tracking-portal-v2/blob/main/screenshots/Admin_PendingUsers.png)
+* ![Admin Dashboard](https://github.com/NithushanUthayarasa/it-asset-tracking-portal-v2/blob/main/screenshots/Admin_dashboard.png) **Admin Dashboard**
+* ![Asset Management](https://github.com/NithushanUthayarasa/it-asset-tracking-portal-v2/blob/main/screenshots/Admin_Asset.png) **Asset Management**
+* ![Assignment Management](https://github.com/NithushanUthayarasa/it-asset-tracking-portal-v2/blob/main/screenshots/Admin_Assignment.png) **Assignment Management**
+* ![Employee Management](https://github.com/NithushanUthayarasa/it-asset-tracking-portal-v2/blob/main/screenshots/Admin_Employees.png) **Employee Management**
+* ![Maintenance Management](https://github.com/NithushanUthayarasa/it-asset-tracking-portal-v2/blob/main/screenshots/Admin_Maintenance.png) **Maintenance Management**
+* ![Ticket Management](https://github.com/NithushanUthayarasa/it-asset-tracking-portal-v2/blob/main/screenshots/Admin_ticket.png) **Ticket Management**
+* ![Add Asset](https://github.com/NithushanUthayarasa/it-asset-tracking-portal-v2/blob/main/screenshots/Admin_Addasset.png) **Add Asset**
+* ![Add Assignment](https://github.com/NithushanUthayarasa/it-asset-tracking-portal-v2/blob/main/screenshots/Admin_Addassignment.png) **Add Assignment**
+* ![Pending Users](https://github.com/NithushanUthayarasa/it-asset-tracking-portal-v2/blob/main/screenshots/Admin_PendingUsers.png) **Pending Users**
 
-### Employee
+### 👨‍💻 Employee
 
-* [Employee Dashboard](https://github.com/NithushanUthayarasa/it-asset-tracking-portal-v2/blob/main/screenshots/Employee_Dashboard.png)
-* [Assigned Assets](https://github.com/NithushanUthayarasa/it-asset-tracking-portal-v2/blob/main/screenshots/Employee_Asset.png)
-* [Create Ticket](https://github.com/NithushanUthayarasa/it-asset-tracking-portal-v2/blob/main/screenshots/Employee_CreateTicket.png)
-* [My Tickets](https://github.com/NithushanUthayarasa/it-asset-tracking-portal-v2/blob/main/screenshots/Employee_Myticket.png)
-* [Feedback](https://github.com/NithushanUthayarasa/it-asset-tracking-portal-v2/blob/main/screenshots/Employee_Feedback.png)
-* [Assignments](https://github.com/NithushanUthayarasa/it-asset-tracking-portal-v2/blob/main/screenshots/Employee_Assignments.png)
+* ![Employee Dashboard](https://github.com/NithushanUthayarasa/it-asset-tracking-portal-v2/blob/main/screenshots/Employee_Dashboard.png) **Dashboard**
+* ![Assigned Assets](https://github.com/NithushanUthayarasa/it-asset-tracking-portal-v2/blob/main/screenshots/Employee_Asset.png) **Assigned Assets**
+* ![Create Ticket](https://github.com/NithushanUthayarasa/it-asset-tracking-portal-v2/blob/main/screenshots/Employee_CreateTicket.png) **Create Ticket**
+* ![My Tickets](https://github.com/NithushanUthayarasa/it-asset-tracking-portal-v2/blob/main/screenshots/Employee_Myticket.png) **My Tickets**
+* ![Feedback](https://github.com/NithushanUthayarasa/it-asset-tracking-portal-v2/blob/main/screenshots/Employee_Feedback.png) **Feedback**
+* ![Assignments](https://github.com/NithushanUthayarasa/it-asset-tracking-portal-v2/blob/main/screenshots/Employee_Assignments.png) **Assignments**
 
-### Authentication
+### 🔐 Authentication
 
-* [Login Page](https://github.com/NithushanUthayarasa/it-asset-tracking-portal-v2/blob/main/screenshots/Login.png)
-* [Register Page](https://github.com/NithushanUthayarasa/it-asset-tracking-portal-v2/blob/main/screenshots/registerpage.png)
+* ![Login](https://github.com/NithushanUthayarasa/it-asset-tracking-portal-v2/blob/main/screenshots/Login.png) **Login Page**
+* ![Register](https://github.com/NithushanUthayarasa/it-asset-tracking-portal-v2/blob/main/screenshots/registerpage.png) **Register Page**
 
-### Database
+### 🗄️ Database
 
-* [PostgreSQL Screenshot](https://github.com/NithushanUthayarasa/it-asset-tracking-portal-v2/blob/main/screenshots/PostgreSQL.png)
+* ![PostgreSQL](https://github.com/NithushanUthayarasa/it-asset-tracking-portal-v2/blob/main/screenshots/PostgreSQL.png) **Database Screenshot**
 
 ---
 
 ## 🎯 Purpose
 
-ITAMS addresses common IT asset management challenges:
+The purpose of the IT Asset Management System (ITAMS) is to provide organizations with a centralized, reliable, and efficient platform to manage their IT assets throughout their entire lifecycle. Modern companies struggle with tracking devices, ensuring accountability, handling support tickets, and maintaining assets manually — leading to delays, losses, and operational inefficiencies.
 
-* Assets are often lost, misused, or untracked
-* Difficulty tracking which employee has which device
-* Delays in resolving technical issues
-* Manual and error-prone maintenance and vendor management
+---
 
-## 🚨 Problem
-  Organizations often face several challenges in managing IT assets:
+## 🚨 Problem Statement
 
-  *Assets can be lost, misplaced, or misused due to lack of centralized tracking
-  *It is difficult to know which employee is assigned which device, leading to accountability issues.
-  *Technical issues and maintenance requests are delayed, slowing down operations
-  *Manual processes for asset management, maintenance, and vendor coordination are error-prone and inefficient.
+Organizations often face these challenges when managing IT assets:
 
-**Solution:** ITAMS provides a centralized, secure, and automated platform to manage all IT asset operations. The system allows organizations to:
-    *Track the entire lifecycle of assets from procurement to retirement
-    *Assign assets to employees with full accountability and history tracking
-    *Manage tickets, maintenance, and vendor-related tasks efficiently to reduce downtime
-    *Collect employee feedback to improve IT services
-    *Replace manual processes with a streamlined, error-free workflow, improving efficiency, accountability, and operational control
+* **Assets are lost or misused:** Devices can be misplaced or improperly used due to lack of centralized tracking 📉
+* **Accountability issues:** Difficult to know which employee is assigned which asset 🔍
+* **Delayed technical support:** Maintenance requests and technical issues take longer to resolve ⏳
+* **Manual processes:** Tracking assets, managing maintenance, and coordinating with vendors manually is error-prone ⚠️
+
+**Solution:** ITAMS provides a unified platform to:
+
+* Track the full lifecycle of assets from procurement to retirement 📦
+* Assign assets to employees with complete accountability and history 👥
+* Manage tickets, maintenance, and vendor tasks efficiently 🛠️
+* Collect employee feedback to improve IT services 💬
+* Streamline operations with automated, error-free workflows ✅
 
 ---
 
@@ -74,44 +71,43 @@ ITAMS addresses common IT asset management challenges:
 
 ### 👨‍💼 Admin
 
-* **Dashboard:** Overview of employees, assets, assignments, and tickets
-* **Employee Management (CRUD):** Add, edit, delete, and view employees
-* **Asset Management (CRUD):** Add, edit, delete assets and track history/status
-* **Assignment Management (CRUD):** Assign assets and track returns
-* **Ticket Management (CRUD):** View, update, comment, and manage attachments
-* **Maintenance Management (CRUD):** Assign vendors, track issues, notify vendors
-* **Feedback Management (CRUD):** View and manage employee feedback
-* **Pending User Approval:** Approve or reject newly registered users
-* **Debug Utilities**
+* Dashboard: Overview of employees, assets, assignments, and tickets
+* Employee Management (CRUD)
+* Asset Management (CRUD)
+* Assignment Management (CRUD)
+* Ticket Management (CRUD)
+* Maintenance Management (CRUD)
+* Feedback Management (CRUD)
+* Pending User Approval
+* Debug Utilities
 
 ### 👨‍💻 Employee
 
-* **Dashboard:** View assigned assets and return dates
-* **Asset Details:** View assigned asset information and history
-* **Ticket Management (CRUD):** Create tickets, add comments, upload attachments
-* **Feedback (CRUD):** Submit feedback
-* **Profile Management**
+* Dashboard & Asset Details
+* Ticket Management (CRUD)
+* Feedback Management (CRUD)
+* Profile Management
 
 ---
 
 ## 🏗️ System Workflow
 
-### Admin Workflow
+### Admin
 
 1. Login → Admin Dashboard
 2. Manage employees, assets, assignments, tickets, and feedback
-3. Review pending user registrations → Approve or reject
+3. Review pending user registrations → Approve/Reject
 4. Assign assets to employees
 5. Manage maintenance and notify vendors
 
-### Employee Workflow
+### Employee
 
-1. Register for an account → Account set to **Pending**
-2. Login only after admin approval
-3. View assigned assets and asset details
+1. Register → Account pending
+2. Login after admin approval
+3. View assigned assets and details
 4. Create tickets → Add comments → Upload attachments
 5. Submit feedback
-6. Return assets (tracked by admin)
+6. Return assets tracked by admin
 
 ---
 
@@ -127,40 +123,35 @@ IT Asset Tracking Portal (ITAMS)
 │   │   │   ├── model/           # Entities & enums
 │   │   │   ├── repository/      # JPA repositories
 │   │   │   ├── service/         # Business logic
-│   │   │   └── dto/             # Data Transfer Objects
+│   │   │   └── dto/             # DTOs
 │   │   ├── resources/
 │   │   │   ├── static/          # CSS, JS, images
 │   │   │   ├── templates/       # Thymeleaf templates
-│   │   │   │   ├── admin/       # Admin dashboards & forms
-│   │   │   │   ├── employee/    # Employee dashboards & forms
-│   │   │   │   ├── fragments/   # Header, footer, sidebar
-│   │   │   │   ├── tickets/     # Ticket views & forms
+│   │   │   │   ├── admin/
+│   │   │   │   ├── employee/
+│   │   │   │   ├── fragments/
+│   │   │   │   ├── tickets/
 │   │   │   │   └── index.html, login.html, register.html
 │   │   │   └── application.properties
 ```
 
 ---
 
-## ⚙️ Configuration (application.properties)
+## ⚙️ Configuration
 
 ```properties
 spring.application.name=it-asset-management
 server.port=8080
-
 spring.datasource.url=jdbc:postgresql://localhost:5432/itams_db
 spring.datasource.username=postgres
 spring.datasource.password=your_db_password
 spring.datasource.driver-class-name=org.postgresql.Driver
-
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.format_sql=true
-
 spring.thymeleaf.cache=false
-
 jwt.secret=yourSuperStrongRandomSecretKeyAtLeast32Chars
 jwt.expirationMs=3600000
-
 spring.main.allow-bean-definition-overriding=true
 ```
 
@@ -168,10 +159,10 @@ spring.main.allow-bean-definition-overriding=true
 
 ## 🛠️ Tech Stack
 
-* **Backend:** Spring Boot 3.3.4, Java 17, Spring Security, Spring Data JPA, PostgreSQL, Lombok
-* **Frontend:** Thymeleaf, Bootstrap 5.3.3, Font Awesome 6.6.0, Google Fonts (Inter)
-* **Build Tool:** Maven
-* **Deployment:** Embedded Tomcat (Port 8080)
+* Backend: Spring Boot 3.3.4, Java 17, Spring Security, Spring Data JPA, PostgreSQL, Lombok
+* Frontend: Thymeleaf, Bootstrap 5.3.3, Font Awesome 6.6.0, Google Fonts (Inter)
+* Build Tool: Maven
+* Deployment: Embedded Tomcat (Port 8080)
 
 ---
 
@@ -188,21 +179,21 @@ spring.main.allow-bean-definition-overriding=true
 
 ## 🚀 Run the Project
 
-### 1️⃣ Clone the repository
+1️⃣ Clone the repository:
 
 ```bash
 git clone <your-repository-url>
 ```
 
-### 2️⃣ Configure PostgreSQL
+2️⃣ Configure PostgreSQL:
 
 ```sql
 CREATE DATABASE itams_db;
 ```
 
-Update database credentials in `application.properties`.
+3️⃣ Update `application.properties` with your DB credentials
 
-### 3️⃣ Run the application
+4️⃣ Run the project:
 
 ```bash
 mvn spring-boot:run
@@ -210,27 +201,27 @@ mvn spring-boot:run
 
 ### 🔑 Default Admin Login
 
-* **Email:** [admin@system.com](mailto:admin@system.com)
-* **Password:** ChangeMe123! (change after first login)
+* Email: [admin@system.com](mailto:admin@system.com)
+* Password: ChangeMe123! (change after first login)
 
 ---
 
 ## 📌 Highlights
 
-* Centralized asset tracking with assignment history
-* Full CRUD operations for all core modules
-* Asset lifecycle and maintenance management
-* Vendor notification support
-* Employee feedback management
-* Clean and responsive UI
-* Role-based dashboards with session security
-* Real-world pending user approval workflow
+* Centralized asset tracking & assignment history 📊
+* Full CRUD for all core modules ✏️
+* Asset lifecycle & maintenance management 🛠️
+* Vendor notifications 📩
+* Employee feedback management 💬
+* Clean & responsive UI 🎨
+* Role-based dashboards with session security 🔐
+* Pending user approval workflow ✅
 
 ---
 
 ## 📄 License
 
-This project is developed for **educational and learning purposes only** and is not intended for production use.
+This project is for **educational purposes only**.
 
 ---
 
