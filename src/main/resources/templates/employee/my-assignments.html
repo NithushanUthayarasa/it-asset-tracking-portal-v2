@@ -115,9 +115,8 @@
                 </thead>
                 <tbody>
                 <tr th:each="assignment : ${assignments}">
-                    <td class="fw-semibold"
-                        th:text="${assignment.asset.assetName != null ? assignment.asset.assetName : assignment.asset.assetTag}">
-                    </td>
+                    <td class="fw-semibold" th:text="${assignment.asset.assetTag}"></td>
+
                     <td th:text="${assignment.asset.assetTag}"></td>
                     <td th:text="${assignment.assignedAt != null ? #temporals.format(assignment.assignedAt, 'dd-MM-yyyy') : '-'}"></td>
                     <td th:text="${assignment.returnedAt != null ? #temporals.format(assignment.returnedAt, 'dd-MM-yyyy') : '-'}"></td>

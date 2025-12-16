@@ -121,7 +121,7 @@
                 </thead>
                 <tbody>
                 <tr th:each="asset : ${assets}">
-                    <td class="fw-semibold" th:text="${asset.assetName != null ? asset.assetName : asset.assetTag}"></td>
+                    <td class="fw-semibold" th:text="${asset.assetTag}"></td>
                     <td th:text="${asset.assignedDate != null ? #temporals.format(asset.assignedDate, 'dd-MM-yyyy') : '-'}"></td>
                     <td class="text-dark fw-600" th:text="${asset.status}"></td>
                     <td>

@@ -115,15 +115,15 @@
                 </thead>
 
                 <tbody>
-                <!-- ONLY THIS LINE WAS CHANGED -->
                 <tr th:each="m, iter : ${maintenances}" th:if="${maintenances != null && !maintenances.isEmpty()}">
                     <td>
-                        <!-- Sequential number starting from 1 -->
                         <span class="badge bg-primary fw-bold" th:text="${iter.count}"></span>
                     </td>
 
                     <td>
-                        <div class="fw-semibold" th:text="${m.asset?.assetName}"></div>
+                        <!-- Replace assetName with brand + model -->
+                        <div class="fw-semibold"
+                             th:text="${(m.asset?.brand != null ? m.asset.brand : '') + ' ' + (m.asset?.model != null ? m.asset.model : '')}"></div>
                         <small class="text-muted" th:text="${m.asset?.assetTag}"></small>
                     </td>
 
@@ -159,10 +159,9 @@
                                 Delete
                             </a>
 
-                            <!-- Notify Vendor Button -->
                             <button type="button" class="btn btn-info action-btn ms-1"
                                     onclick="notifyVendor(
-                                        '[[${m.asset.assetName}]]',
+                                        '[[${(m.asset?.brand != null ? m.asset.brand : '') + ' ' + (m.asset?.model != null ? m.asset.model : '')}]]',
                                         '[[${m.asset.assetTag}]]',
                                         '[[${m.issueDescription}]]',
                                         '[[${m.vendor}]]'
@@ -192,7 +191,6 @@
     </div>
 </div>
 
-<!-- Notify Vendor Script -->
 <script>
     function notifyVendor(assetName, assetTag, issueDescription, vendor) {
         if (!vendor) {
@@ -204,7 +202,6 @@
 Issue: ${issueDescription}
 Request: Kindly perform a detailed diagnosis and proceed with the necessary repairs at the earliest.`;
 
-        // Open popup with message
         const popup = window.open("", "Vendor Message", "width=500,height=400");
         popup.document.write("<html><head><title>Notify Vendor</title></head><body>");
         popup.document.write("<h4>Send this to vendor:</h4>");

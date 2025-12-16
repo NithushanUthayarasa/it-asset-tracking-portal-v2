@@ -17,10 +17,6 @@ public class Asset {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    // Friendly name for UI (used in your card header)
-    @Column(length = 150)
-    private String assetName;
-
     @Column(nullable = false, unique = true, length = 50)
     private String assetTag;
 
@@ -55,11 +51,6 @@ public class Asset {
     @Column(name = "assigned_date")
     private LocalDate assignedDate;
 
-    // Extra fields used in your templates
-    private String department;         // optional: location's department
-    private LocalDate warrantyUntil;
-    private String location;
-
     @CreationTimestamp
     @Column(name = "created_at", updatable = false)
     private LocalDateTime createdAt;
@@ -73,12 +64,9 @@ public class Asset {
         this.status = AssetStatus.AVAILABLE;
     }
 
-    // getters & setters
+    // =================== GETTERS & SETTERS ===================
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
-
-    public String getAssetName() { return assetName; }
-    public void setAssetName(String assetName) { this.assetName = assetName; }
 
     public String getAssetTag() { return assetTag; }
     public void setAssetTag(String assetTag) { this.assetTag = assetTag; }
@@ -109,15 +97,6 @@ public class Asset {
 
     public LocalDate getAssignedDate() { return assignedDate; }
     public void setAssignedDate(LocalDate assignedDate) { this.assignedDate = assignedDate; }
-
-    public String getDepartment() { return department; }
-    public void setDepartment(String department) { this.department = department; }
-
-    public LocalDate getWarrantyUntil() { return warrantyUntil; }
-    public void setWarrantyUntil(LocalDate warrantyUntil) { this.warrantyUntil = warrantyUntil; }
-
-    public String getLocation() { return location; }
-    public void setLocation(String location) { this.location = location; }
 
     public LocalDateTime getCreatedAt() { return createdAt; }
     public LocalDateTime getUpdatedAt() { return updatedAt; }
